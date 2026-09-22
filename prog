@@ -1,0 +1,23 @@
+def find_digit(n):
+    length = 1
+    count = 9
+    start = 1
+
+    # Определяем длину числа, в котором находится N-я цифра
+    while n > length * count:
+        n -= length * count
+        length += 1
+        count *= 10
+        start *= 10
+
+    # Находим само число
+    number = start + (n - 1) // length
+
+    # Находим индекс цифры внутри числа
+    digit_index = (n - 1) % length
+
+    # Преобразуем число в строку и берем нужный символ
+    return int(str(number)[digit_index])
+
+# Проверка примеров
+print(find_digit(10**9)) # Вывод: 1
