@@ -17,6 +17,7 @@ print(len(big['patient'].unique()))
 df['region'] = df['Image context'].str.split(' - ')[1]
 print(df['region'].unique())
 
+p = 50000000
 def join_regions(region):
 #Приводит названия областей к укрупнённым группам.
     if pd.isna(region):
