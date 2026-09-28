@@ -43,3 +43,5 @@ def join_regions(region):
 if JOIN_REGIONS:
     df['region'] = df['region'].apply(join_regions)
 #Привет
+
+

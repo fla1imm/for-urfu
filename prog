@@ -6,3 +6,5 @@ def change_y(y:int):
     y = 6
 x = 1
 y = 2
+def f(x):
+    return x*2
