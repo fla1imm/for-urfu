@@ -1,12 +1,8 @@
-some_pos = int(input())
-digits = 1 # количество знаков в начальном блоке (1)
-count = 9 # количество чисел в начальном блоке
-start = 1 # с какого числа начинаем
-while some_pos > digits*count: # определяем блок числа
-    some_pos -= digits*count
-    digits *= 1
-    count *= 10
-    start *= 10
-number = start + (some_pos -1)//digits
-position = (some_pos - 1)%digits
-return str(number)[]
+def some_sum(x:int, y:int) -> None:
+    summ = x+y
+    print(summ)
+
+def change_y(y:int):
+    y = 6
+x = 1
+y = 2
